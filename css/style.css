@@ -426,6 +426,10 @@ body {
     width: 100px;  
 }
 
+.partners {
+    border-bottom: 2px solid #eeeeee;
+}
+
 .partners-list {
     display: flex;
     align-items: center;
@@ -463,3 +467,27 @@ body {
 .partner-item:active {
     opacity: 0.1;
 }
+
+.footer-main {
+    padding-top: 80px; 
+}
+
+.footer-contact-map iframe {
+    
+    z-index: 2;
+    display: block;
+    
+    margin: 0 auto;
+    
+    border: none;
+}
+
+.footer-contact-address {
+    margin: 0;
+    padding: 47px 50px;
+
+    background-color: #ffffff;
+}
+
+
+
