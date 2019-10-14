@@ -472,21 +472,63 @@ body {
     padding-top: 80px; 
 }
 
+.footer-contact-map {
+    position: relative;
+
+    height: 416px;
+}
+
 .footer-contact-map iframe {
-    
-    z-index: 2;
-    display: block;
-    
-    margin: 0 auto;
-    
-    border: none;
+    width: 100%;
+    height: 100%;
 }
 
 .footer-contact-address {
+    position: absolute;
+
+    top: 26px;
+    left: 140px;
+
+    box-sizing: border-box;
+
     margin: 0;
     padding: 47px 50px;
 
+    width: 320px;
+    height: 308px;
+
     background-color: #ffffff;
+}
+
+.footer-contact-address h3 {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.footer-contact-address p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #666666;
+}
+
+.footer-contact-address p:first-of-type {
+    margin-bottom: 20px;
+}
+
+.footer-contact-address p:last-of-type {
+    margin-bottom: 37px;
+}
+
+.modal-button {
+    padding: 16px 45px;
 }
 
 
