@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-	<meta charset="UTF-8">
-	<title>Магазин готовых шаблонов</title>
-	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Магазин готовых шаблонов</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
+			rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
 
 <body>
-	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65"
-					alt="Логотип сайта"></a>
+	<header class="main-header inner-page">
+		<nav class="main-navigation container">
+			<a class="main-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип сайта"></a>
 			<div class="site-navigation">
 				<ul class="menu-main">
 					<li class="menu-item"><a href="#">Студия</a></li>
 					<li class="menu-item"><a href="#">Клиенты</a></li>
 					<li class="menu-item current-page"><a>Магазин</a></li>
 					<li class="menu-item"><a href="#">Контакты</a></li>
-					<li class="menu-item"><a href="#">Корзина</a></li>
 				</ul>
 			</div>
+			<a class="header-cart" href="#">Корзина</a>
 		</nav>
-		<h1 class="catalog-page-title">Магазин готовых шаблонов</h1>
+		<h1 class="catalog-page-title">Магазин готовых шаблонов</h1>	
 	</header>
 	<main>
 		<section class="filter">
@@ -154,13 +155,10 @@
 				<li class="pagination-item"><a href="#">Следующая</a></li>
 			</ul>
 		</section>
-
 	</main>
 	<footer class="footer-main">
-		<div class="footer-contacts">
-			<div class="footer-contact-map">
-				<img src="img/map.png" width="1440" height="416" alt="Карта с адресом">
-			</div>
+		<div class="footer-contact-map">
+			<iframe src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" frameborder="0" allowfullscreen="true"></iframe>
 			<div class="footer-contact-address">
 				<h3>NЁRDS DESIGN STUDIO</h3>
 				<p>191186, Санкт-Петербург,<br>
@@ -169,12 +167,12 @@
 				<a class="btn modal-button" href="#">Напишите нам</a>
 			</div>
 		</div>
-		<div class="footer-social">
-			<div class="social-info">
-				<a href="#">Вконтакте</a>
-				<a href="#">Фейсбук</a>
-				<a href="#">Инстаграм</a>
-			</div>
+		<div class="footer-social container">
+			<ul class="social-list">
+				<li class="social-item social-vk"><a class="visually-hidden" href="#">Вконтакте</a></li>
+				<li class="social-item social-fb"><a class="visually-hidden" href="#">Фейсбук</a></li>
+				<li class="social-item social-insta"></li><a class="visually-hidden" href="#">Инстаграм</a></li>
+			</ul>
 			<div class="discount-info">
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
@@ -182,14 +180,21 @@
 		</div>
 	</footer>
 	<section class="modal">
+		<button class="close-modal-button"><span class="visually-hidden">Закрыть</span></button>
 		<h2 class="modal-title">Напишите нам</h2>
-		<form action="" method="POST">
-			<label for="fullname">Ваше имя:</label>
-			<input type="text" name="fullname" id="fullname">
-			<label for="email">Ваш e-mail:</label>
-			<input type="email" name="email" id="email">
-			<label for="letter">Текст письма:</label>
-			<textarea name="letter" id="letter"></textarea>
+		<form class="modal-form" action="" method="POST">
+			<p class="modal-item">
+				<label for="fullname">Ваше имя:</label>
+				<input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+			</p>
+			<p class="modal-item">
+				<label for="email">Ваш e-mail:</label>
+				<input type="text" name="email" id="email" placeholder="email@example.com">
+			</p>
+			<p class="modal-item">
+				<label for="letter">Текст письма:</label>
+				<textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+			</p>
 		</form>
 		<button class="btn form-button" type="submit">Отправить</button>
 	</section>
