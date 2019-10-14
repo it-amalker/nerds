@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Магазин готовых шаблонов</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65"
+					alt="Логотип сайта"></a>
+			<div class="site-navigation">
+				<ul class="menu-main">
+					<li class="menu-item"><a href="#">Студия</a></li>
+					<li class="menu-item"><a href="#">Клиенты</a></li>
+					<li class="menu-item current-page"><a>Магазин</a></li>
+					<li class="menu-item"><a href="#">Контакты</a></li>
+					<li class="menu-item"><a href="#">Корзина</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h1 class="catalog-page-title">Магазин готовых шаблонов</h1>
+	</header>
+	<main>
+		<section class="filter">
+			<form class="filter-form" action="" method="GET">
+				<fieldset>
+					<legend class="filter-title">Стоимость:</legend>
+					<ul>
+						<li class="filter-option">
+							<label for="price-from">от</label>
+							<input type="text" name="price-from" id="price-from">
+						</li>
+						<li class="filter-option">
+							<label for="price-to">до</label>
+							<input type="text" name="price-to" id="price-to">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend class="filter-title">Сетка:</legend>
+					<ul>
+						<li class="filter-option">
+							<label for="grid-adaptive">Адаптивная</label>
+							<input type="radio" name="grid-type" id="grid-adaptive">
+						</li>
+						<li class="filter-option">
+							<label for="grid-fixed">Фиксированная</label>
+							<input type="radio" name="grid-type" id="grid-fixed">
+						</li>
+						<li class="filter-option">
+							<label for="grid-elastic">Резиновая</label>
+							<input type="radio" name="grid-type" id="grid-elastic">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend class="filter-title">Особенности:</legend>
+					<ul>
+						<li class="filter-option">
+							<label for="module-1">Слайдер</label>
+							<input type="checkbox" name="slider" id="module-1" checked>
+						</li>
+						<li class="filter-option">
+							<label for="module-2">Блок преимуществ</label>
+							<input type="checkbox" name="benefit-module" id="module-2">
+						</li>
+						<li class="filter-option">
+							<label for="module-3">Новости</label>
+							<input type="checkbox" name="news-module" id="module-3" checked>
+						</li>
+						<li class="filter-option">
+							<label for="module-4">Галерея</label>
+							<input type="checkbox" name="gallery" id="module-4">
+						</li>
+						<li class="filter-option">
+							<label for="module-5">Корзина</label>
+							<input type="checkbox" name="cart-module" id="module-5">
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit" class="button filter-button">Показать</button>
+			</form>
+		</section>
+
+		<section class="templates">
+			<div class="template-sort">
+				<h3 class="template-sort-title">Сортировать:</h3>
+				<ul class="template-sort-list">
+					<li class="template-sort-item"><a href="#">По цене</a></li>
+					<li class="template-sort-item"><a href="#">По типу</a></li>
+					<li class="template-sort-item"><a href="#">По названию</a></li>
+					<li class="template-sort-item"><a href="#">По-убыванию</a></li>
+					<li class="template-sort-item"><a href="#">По-возростанию</a></li>
+				</ul>
+			</div>
+			<ul class="templates-list">
+				<li class="template-item"><a href="#"><img src="img/img-sedona.jpg" width="360" height="576"></a></li>
+				<li class="template-item-hidden">
+					<h3>Седона</h3>
+					<p>Информационный сайт для туристов</p>
+					<a class="btn price-button" href="#">9 900 руб.</a>
+				</li>
+			</ul>
+			<ul class="templates-list">
+				<li class="template-item"><a href="#"><img src="img/img-pink.jpg" width="360" height="576"></a></li>
+				<li class="template-item-hidden">
+					<h3>Pink App</h3>
+					<p>Продуктовый лендинг приложения для iOS и Android</p>
+					<a class="btn price-button" href="#">9 900 руб.</a>
+				</li>
+			</ul>
+			<ul class="templates-list">
+				<li class="template-item"><a href="#"><img src="img/img-barbershop.jpg" width="360" height="576"></a>
+				</li>
+				<li class="template-item-hidden">
+					<h3>Barbershop</h3>
+					<p>Сайт салоны красоты. Для мужчин, да.</p>
+					<a class="btn price-button" href="#">9 900 руб.</a>
+				</li>
+			</ul>
+			<ul class="templates-list">
+				<li class="template-item"><a href="#"><img src="img/img-mishka.jpg" width="360" height="576"></a></li>
+				<li class="template-item-hidden">
+					<h3>MISHKA</h3>
+					<p>Интернет-магазин вязаных игрушек</p>
+					<a class="btn price-button" href="#">9 900 руб.</a>
+				</li>
+			</ul>
+			<ul class="templates-list">
+				<li class="template-item"><a href="#"><img src="img/img-aplus.jpg" width="360" height="576"></a></li>
+				<li class="template-item-hidden">
+					<h3>A Plus</h3>
+					<p>Лендинг курсов повышения квалификации</p>
+					<a class="btn price-button" href="#">9 900 руб.</a>
+				</li>
+			</ul>
+			<ul class="templates-list">
+				<li class="template-item"><a href="#"><img src="img/img-kvast.jpg" width="360" height="576"></a></li>
+				<li class="template-item-hidden">
+					<h3>КВАСТ</h3>
+					<p>Промо-сайт производителя крафтового кваса</p>
+					<a class="btn price-button" href="#">9 900 руб.</a>
+				</li>
+			</ul>
+			<ul class="pagination-list">
+				<li class="pagination-item pagination-item-current"><a>1</a></li>
+				<li class="pagination-item"><a href="#">2</a></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li class="pagination-item"><a href="#">Следующая</a></li>
+			</ul>
+		</section>
+
+	</main>
+	<footer class="footer-main">
+		<div class="footer-contacts">
+			<div class="footer-contact-map">
+				<img src="img/map.png" width="1440" height="416" alt="Карта с адресом">
+			</div>
+			<div class="footer-contact-address">
+				<h3>NЁRDS DESIGN STUDIO</h3>
+				<p>191186, Санкт-Петербург,<br>
+					ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a class="btn modal-button" href="#">Напишите нам</a>
+			</div>
+		</div>
+		<div class="footer-social">
+			<div class="social-info">
+				<a href="#">Вконтакте</a>
+				<a href="#">Фейсбук</a>
+				<a href="#">Инстаграм</a>
+			</div>
+			<div class="discount-info">
+				<b>Давайте дружить, это выгодно!</b>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
+	</footer>
+	<section class="modal">
+		<h2 class="modal-title">Напишите нам</h2>
+		<form action="" method="POST">
+			<label for="fullname">Ваше имя:</label>
+			<input type="text" name="fullname" id="fullname">
+			<label for="email">Ваш e-mail:</label>
+			<input type="email" name="email" id="email">
+			<label for="letter">Текст письма:</label>
+			<textarea name="letter" id="letter"></textarea>
+		</form>
+		<button class="btn form-button" type="submit">Отправить</button>
+	</section>
+</body>
+
+</html>

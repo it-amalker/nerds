@@ -1,0 +1,465 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    min-width: 1200px;
+
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #283136;
+    background: #ffffff;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 1160px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 16px 55px;
+
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color: #ffffff;
+    background-color: #fb565a;
+    
+    border-radius: 2px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #e74246;
+}
+
+.btn:active {
+    background-color: #d7373b;
+    border-top: 3px solid #c13135;
+    padding-top: 13px;
+}
+
+.main-header {
+    min-height: 545px;
+
+    background: #eeeeee;
+}
+
+.main-logo {
+    margin-right: 200px;
+    
+    width: 160px;
+    height: 65px;
+}
+
+.main-logo:hover {
+    opacity: 0.8;
+}
+
+.main-logo:active {
+    opacity: 0.3;
+}
+
+.main-navigation {
+    display: flex;
+    
+    align-items: center;
+
+    padding-top: 50px;
+    padding-bottom: 17px;
+}
+
+.menu-main {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    width: 440px; 
+}
+
+.menu-item {
+    margin-right: 47px;   
+}
+
+.menu-item:last-child {
+    margin-right: 0;   
+}
+
+.header-cart {
+    position: relative;
+
+    margin-left: auto;
+    
+    width: 120px; 
+    
+    text-align: right;
+}
+
+.header-cart::before {
+    content: "";
+
+    position: absolute;
+
+    top: 6px;
+    left: 5px;
+
+    width: 15px;
+    height: 15px;
+
+    background: url("../img/cart-icon.png") center no-repeat;   
+}
+
+.menu-item a ,
+.header-cart {
+    color: #000000;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu-item a:hover,
+.header-cart:hover {
+    color: #fb565a;  
+}
+
+.menu-item a:active,
+.header-cart:active {
+    color: #000000;
+    opacity: 0.3;  
+}
+
+.slider-title {
+    margin: 0;
+    margin-bottom: 24px;
+    
+    width: 520px;
+
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+
+    color: #000000; 
+}
+
+.slider-description {
+    margin: 0;
+    width: 415px;
+    margin-bottom: 42px;
+}
+
+.slider-2 {
+    display: none;
+}
+
+
+.slider-3 {
+    display: none;
+}
+
+.slider-1,
+.slider-2,
+.slider-3 {
+    position: relative;
+    margin-top: 64px;
+}
+
+.slider-1 .slider-wrapper,
+.slider-2 .slider-wrapper,
+.slider-3 .slider-wrapper {
+    position: absolute;
+
+    top: 0;
+    left: 20px;
+
+    z-index: 1; 
+}
+
+.slider-1 img {
+    display: block;
+    
+    width: 698px;
+    height: 412px;
+
+    margin-left: auto;
+}
+
+.slider-2 img {
+    display: block;
+    
+    width: 663px;
+    height: 430px;
+
+    margin-left: auto;
+}
+
+.slider-3 img {
+    display: block;
+    
+    width: 759px;
+    height: 411px;
+
+    margin-left: auto;
+}
+
+.services-list {
+    display: flex;
+    margin: 0; 
+    padding: 80px 0;
+
+    list-style: none;
+
+    border-bottom: 2px solid #eeeeee;
+}
+
+.service-item {
+    margin: 0;
+
+    margin-right: 100px;
+    width: 300px;
+}
+
+.service-logo {
+    margin: 0;
+}
+.service-item img {
+    display: block;
+
+    margin-bottom: 28px;
+
+    width: 300px;
+    height: 146px;
+}
+
+.service-title {
+    margin: 0;
+    margin-bottom: 16px;
+
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #000000;
+
+    text-transform: uppercase;  
+}
+
+.service-description {
+    margin: 0;
+    margin-bottom: 34px; 
+}
+
+.services-list .order-button {
+    padding: 16px 40px;
+}
+
+
+.services-list .order-button:hover {
+    background-color: #e74246;
+}
+
+.services-list .order-button:active {
+    background-color: #d7373b;
+    border-top: 3px solid #c13135;
+    padding-top: 13px;
+}
+
+.service-item:nth-of-type(2) .order-button {
+    background-color: #00ca74;
+}
+
+.service-item:nth-of-type(2) .order-button:hover {
+    background-color: #00bc6c;
+}
+
+.service-item:nth-of-type(2) .order-button:active {
+    background-color: #00aa62;
+    border-top: 3px solid #009958;
+    padding-top: 13px;
+}
+
+.service-item:last-of-type .order-button {
+    background-color: #efc84a;
+}
+
+.service-item:last-of-type .order-button:hover {
+    background-color: #eab534;
+}
+
+.service-item:last-of-type .order-button:active {
+    background-color: #e5a722;
+    border-top: 3px solid #ce961f;
+    padding-top: 13px;
+}
+
+.introduce {
+    display: flex;
+
+    margin: 0;
+
+    border-bottom: 2px solid #eeeeee;
+}
+
+.features {
+    width: 360px;
+}
+
+.about-us {
+    width:660px;
+}
+
+.about-us-title {
+    margin: 0;
+    padding-top: 73px;
+    padding-bottom: 32px;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.about-us-description {
+    margin: 0;
+    padding-bottom: 40px;
+
+}
+
+.jobs-title {
+    margin: 0;
+    padding-bottom: 26px;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.jobs-list {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 72px;
+
+    list-style: none;
+}
+
+.jobs-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 27px;
+}
+
+.jobs-item::before {
+    content: "";
+
+    position: absolute;
+    
+    top: 11px;
+    left: 1px;
+
+    width: 25px;
+    height: 2px;
+    
+    background-color: #fb565a;
+}
+
+.features {
+    margin-left: auto;
+}
+.features img {
+    display: block;
+    width: 360px;
+    height: 208px;
+    padding-top: 40px;
+    padding-bottom: 34px;
+}
+
+.features-title {
+    margin: 0;
+    padding-bottom: 58px;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.features-table {
+    margin: 0;
+    padding: 0;
+
+    width: 360px;
+
+    border-collapse: collapse;
+}
+
+.percent-row {
+    font-size: 45px;
+    font-weight: bold;
+
+    color: #000000;
+}
+
+.percent-row sup {
+    top: -9px;
+}
+
+.description-row {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.features-table td {
+    padding-bottom: 30px;
+    width: 100px;  
+}
+
+.partners-list {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 45px 0;
+    
+    list-style: none;
+}
+
+.partner-item {
+    width: 260px;
+
+    margin-right: 40px;
+
+    opacity: 0.2;
+    
+}
+
+.partner-item:last-child {
+    margin-right: 0px;
+    
+}
+
+.partner-item img {
+    display: block;
+    
+    margin: 0 auto;   
+}
+
+.partner-item:hover {
+    opacity: 1;
+}
+
+.partner-item:active {
+    opacity: 0.1;
+}
