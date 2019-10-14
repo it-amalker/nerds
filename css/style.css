@@ -71,7 +71,6 @@ input[type="radio"].visually-hidden {
 
 .main-header.inner-page {
     min-height: 355px;
-
 }
 
 .main-logo {
@@ -825,7 +824,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-page-title {
-    margin-top: 77px;
+    margin: 0;
+    padding-top: 77px;
 
     font-size: 55px;
     line-height: 55px;
@@ -834,6 +834,100 @@ input[type="radio"].visually-hidden {
     text-align: center;
 
     color: #000000;
+}
+
+.filter-content-wrapper {
+    display: flex;
+    margin: 0;
+}
+
+.filter {
+    width: 260px;
+
+}
+.filter-form fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.filter-title {
+    margin: 0;
+    padding-top: 57px;
+    padding-bottom: 50px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.filter-form ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.filter-range {
+    box-sizing: border-box;
+    width: 260px;
+    height: 80px;
+    background-color: #eeeeee;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.progress-line {
+    position: relative;
+    
+    margin: auto;
+    margin-top: 37px;
+    
+    width: 219px;
+    height: 2px;
+    
+    background-image: linear-gradient(to right, #00ca74 69%, #d7dcde 31%);
+}
+
+.progress-line::before {
+    content: "";
+
+    position: absolute;
+
+    box-sizing: border-box;
+
+    width: 20px;
+    height: 20px;
+
+    top: -9px;
+    left: -5px;
+
+    background-color: #ababab;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px #cccdcd;
+}
+
+.progress-line::after {
+    content: "";
+
+    position: absolute;
+
+    box-sizing: border-box;
+
+    width: 20px;
+    height: 20px;
+
+    top: -9px;
+    left: 140px;
+
+    background-color: #ababab;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px #cccdcd;
 }
 
 
