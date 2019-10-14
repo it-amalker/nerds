@@ -163,16 +163,24 @@
         </div>
     </footer>
     <section class="modal">
+        <button class="close-modal-button"><span class="visually-hidden">Закрыть</span></button>
         <h2 class="modal-title">Напишите нам</h2>
-        <form action="" method="POST">
-            <label for="fullname">Ваше имя:</label>
-            <input type="text" name="fullname" id="fullname">
-            <label for="email">Ваш e-mail:</label>
-            <input type="email" name="email" id="email">
-            <label for="letter">Текст письма:</label>
-            <textarea name="letter" id="letter"></textarea>
+        <form class="modal-form" action="" method="POST">
+            <p class="modal-item">
+                <label for="fullname">Ваше имя:</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+            </p>
+            <p class="modal-item">
+                <label for="email">Ваш e-mail:</label>
+                <input type="text" name="email" id="email" placeholder="email@example.com">
+            </p>
+            <p class="modal-item">
+                <label for="letter">Текст письма:</label>
+                <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+            </p>
         </form>
         <button class="btn form-button" type="submit">Отправить</button>
+
     </section>
 </body>
 
