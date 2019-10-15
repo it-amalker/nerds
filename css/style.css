@@ -119,6 +119,8 @@ input[type="radio"].visually-hidden {
 .header-cart {
     position: relative;
 
+    display: block;
+
     margin-left: auto;
     padding-top: 13px;
 
@@ -148,6 +150,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 500;
+
 }
 
 .menu-item a:hover,
@@ -161,7 +164,14 @@ input[type="radio"].visually-hidden {
     opacity: 0.3;
 }
 
-.current-page {
+.menu-item.current-page a {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fb565a;
+}
+
+.header-cart.current-page {
+    margin-top: 6px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #fb565a;
 }
 
@@ -508,7 +518,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-main.inner-page {
-    padding-top: 60px;
+    padding-top: 73px;
 }
 
 .footer-contact-map {
@@ -879,16 +889,14 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-price-title {
-    padding-top: 57px;
-    padding-bottom: 50px;
+    padding-top: 56px;
+    padding-bottom: 47px;
 }
-
-
 
 .filter-range {
     box-sizing: border-box;
 
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 
     width: 260px;
     height: 80px;
@@ -921,7 +929,7 @@ input[type="radio"].visually-hidden {
     height: 20px;
 
     top: -9px;
-    left: -5px;
+    left: -2px;
 
     background-color: #ababab;
     border: 8px solid #fff;
@@ -954,7 +962,7 @@ input[type="radio"].visually-hidden {
 
     margin: 0;
     padding: 0;
-    margin-bottom: 56px;
+    padding-bottom: 56px;
 
     list-style: none;
 }
@@ -962,7 +970,7 @@ input[type="radio"].visually-hidden {
 .filter-price label {
     display: inline-block;
     line-height: 22px;
-    padding-right: 11px;
+    padding-right: 10px;
     text-transform: uppercase;
 }
 
@@ -984,19 +992,19 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-grid-title {
-    padding-bottom: 15px;
+    padding-bottom: 13px;
 }
 
 .filter-grid {
     margin: 0;
     padding: 0;
-    margin-bottom: 45px;
+    padding-bottom: 44px;
 
     list-style: none;
 }
 
 .filter-grid .filter-option {
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 }
 
 .filter-grid .filter-option:last-child {
@@ -1037,7 +1045,7 @@ input[type="radio"].visually-hidden {
 
     position: absolute;
 
-    top: -1px;
+    top: -2px;
     left: 0px;
 
     width: 25px;
@@ -1052,7 +1060,7 @@ input[type="radio"].visually-hidden {
 
     position: absolute;
 
-    top: 7px;
+    top: 6px;
     left: 8px;
 
     width: 9px;
@@ -1079,19 +1087,19 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-modules-title {
-    padding-bottom: 15px;
+    padding-bottom: 14px;
 }
 
 .filter-modules {
     margin: 0;
     padding: 0;
-    margin-bottom: 48px;
+    padding-bottom: 46px;
 
     list-style: none;
 }
 
 .filter-modules .filter-option {
-    padding-bottom: 17px;
+    padding-bottom: 16px;
 }
 
 .filter-modules .filter-option:last-child {
@@ -1160,7 +1168,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-button {
-    padding: 18px 89px;
+    padding: 16px 89px;
+
+    font-weight: bold;
 
     background-color: #eeeeee;
     color: #000000;
@@ -1185,7 +1195,7 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     margin: 0;
     margin-right: 267px;
-    padding-top: 57px;
+    padding-top: 53px;
     padding-bottom: 50px;
 
     font-size: 18px;
@@ -1208,7 +1218,7 @@ input[type="radio"].visually-hidden {
 .template-sort-item {
     display: inline-block;
 
-    padding-right: 26px;
+    margin-right: 21px;
 
     font-size: 14px;
     line-height: 18px;
@@ -1221,7 +1231,7 @@ input[type="radio"].visually-hidden {
 
 .template-sort-item a {
     display: block;
-    padding-top: 6px;
+
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(0, 0, 0, 0.3);
@@ -1238,7 +1248,7 @@ input[type="radio"].visually-hidden {
 
 .template-sort-up-down {
     width: 60px;
-    line-height: 16px;
+    line-height: 13px;
     text-align: right;
 }
 
@@ -1257,7 +1267,7 @@ input[type="radio"].visually-hidden {
 
 .template-sort-up-down .sort-up {
     display: inline-block;
-    margin-left: 18px;
+    margin-left: 16px;
 
     width: 11px;
     height: 10px;
@@ -1307,7 +1317,7 @@ input[type="radio"].visually-hidden {
 
     box-sizing: border-box;
 
-    margin-bottom: 33px;
+    margin-bottom: 27px;
 
     width: 360px;
 }
@@ -1322,6 +1332,7 @@ input[type="radio"].visually-hidden {
 
 .template-card-browser {
     width: 360px;
+    height: 40px;
 
     background-color: #e9e9e9;
 
@@ -1339,7 +1350,6 @@ input[type="radio"].visually-hidden {
 .template-card-browser ul {
     margin: 0;
     padding: 0;
-    padding: 16px 0;
 
     list-style: none;
 }
@@ -1347,7 +1357,9 @@ input[type="radio"].visually-hidden {
 .decorate-circle {
     display: inline-block;
 
-    margin-left: 9px;
+    margin: 13px 0;
+    margin-left: 6px;
+
     width: 14px;
     height: 14px;
 
@@ -1382,7 +1394,7 @@ input[type="radio"].visually-hidden {
 
 .template-card-description h3 {
     margin: 0;
-    padding-top: 29px;
+    padding-top: 28px;
 
     font-size: 18px;
     line-height: 30px;
@@ -1397,9 +1409,10 @@ input[type="radio"].visually-hidden {
     display: block;
 
     margin: 0 auto;
-    padding: 29px 0;
+    padding-top: 15px;
+    padding-bottom: 28px;
 
-    width: 240px;
+    width: 230px;
     text-align: center;
 
     font-size: 16px;
@@ -1419,7 +1432,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-list {
     margin: 0;
-    margin-top: 27px;
+    margin-top: 37px;
     padding: 0;
 
     list-style: none;
@@ -1430,8 +1443,8 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item {
-    margin-right: 9px;
-    padding: 16px 21px;
+    margin-right: 7px;
+    padding: 15px 20px;
 
     font-size: 16px;
     line-height: 18px;
@@ -1448,7 +1461,7 @@ input[type="radio"].visually-hidden {
 .pagination-button {
     margin-right: 0;
 
-    padding: 16px 78px;
+    padding: 16px 79px;
 }
 
 .pagination-item:hover {
