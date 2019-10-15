@@ -1216,6 +1216,15 @@ input[type="radio"].visually-hidden {
     color: rgb(0, 0, 0, 0.3);
 }
 
+.template-sort-item a:hover {
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.template-sort-item a:active,
+.template-sort-item.active a {
+    color: rgb(0, 0, 0, 1);
+}
+
 .template-sort-up-down {
     width: 60px;
     text-align: right;
@@ -1231,6 +1240,7 @@ input[type="radio"].visually-hidden {
     background: url("../img/icon-up-down.svg") center no-repeat;
     transform: rotate(180deg);
     border: none;
+    opacity: 0.2;
 }
 
 .template-sort-up-down .sort-up {
@@ -1242,4 +1252,22 @@ input[type="radio"].visually-hidden {
 
     background: url("../img/icon-up-down.svg") center no-repeat;
     border: none;
+    opacity: 0.2;
+}
+
+.template-sort-up-down .sort-down:hover,
+.template-sort-up-down .sort-up:hover {
+    opacity: 0.4;
+}
+
+.template-sort-up-down .sort-down:active,
+.template-sort-up-down .sort-up:active,
+.sort-down.active,
+.sort-up.active {
+    opacity: 1;
+}
+
+.sort-down.active:hover,
+.sort-up.active:hover {
+    opacity: 1;
 }
