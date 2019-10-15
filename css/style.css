@@ -94,7 +94,6 @@ input[type="radio"].visually-hidden {
     align-items: center;
 
     padding-top: 50px;
-    padding-bottom: 17px;
 }
 
 .menu-main {
@@ -102,6 +101,7 @@ input[type="radio"].visually-hidden {
 
     margin: 0;
     padding: 0;
+    padding-top: 13px;
 
     list-style: none;
 
@@ -120,8 +120,9 @@ input[type="radio"].visually-hidden {
     position: relative;
 
     margin-left: auto;
+    padding-top: 13px;
 
-    width: 105px;
+    width: 113px;
 
     text-align: right;
 }
@@ -131,7 +132,7 @@ input[type="radio"].visually-hidden {
 
     position: absolute;
 
-    top: 6px;
+    top: 20px;
     left: 0px;
 
     width: 15px;
@@ -166,6 +167,7 @@ input[type="radio"].visually-hidden {
 
 .slider-title {
     margin: 0;
+    margin-top: 78px;
     margin-bottom: 24px;
 
     width: 520px;
@@ -180,7 +182,7 @@ input[type="radio"].visually-hidden {
 .slider-description {
     margin: 0;
     width: 415px;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
 }
 
 .slider-2 {
@@ -196,7 +198,6 @@ input[type="radio"].visually-hidden {
 .slider-2,
 .slider-3 {
     position: relative;
-    margin-top: 64px;
 }
 
 .slider-1 .slider-wrapper,
@@ -214,9 +215,11 @@ input[type="radio"].visually-hidden {
     display: block;
 
     width: 698px;
-    height: 412px;
+    height: 413px;
 
-    margin-left: auto;
+    margin-left: 430px;
+    padding-top: 17px;
+
 }
 
 .slider-2 img {
@@ -234,6 +237,7 @@ input[type="radio"].visually-hidden {
     width: 759px;
     height: 411px;
 
+    padding-top: 17px;
     margin-left: auto;
 }
 
@@ -261,7 +265,7 @@ input[type="radio"].visually-hidden {
 .service-item img {
     display: block;
 
-    margin-bottom: 28px;
+    padding-bottom: 26px;
 
     width: 300px;
     height: 146px;
@@ -269,7 +273,7 @@ input[type="radio"].visually-hidden {
 
 .service-title {
     margin: 0;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 
     font-size: 24px;
     line-height: 30px;
@@ -281,7 +285,9 @@ input[type="radio"].visually-hidden {
 
 .service-description {
     margin: 0;
-    margin-bottom: 34px;
+    padding-bottom: 31px;
+
+    width: 250px;
 }
 
 .services-list .order-button {
@@ -373,7 +379,7 @@ input[type="radio"].visually-hidden {
 .jobs-list {
     margin: 0;
     padding: 0;
-    padding-bottom: 72px;
+    padding-bottom: 48px;
 
     list-style: none;
 }
@@ -381,7 +387,7 @@ input[type="radio"].visually-hidden {
 .jobs-item {
     position: relative;
     padding-left: 37px;
-    padding-bottom: 27px;
+    padding-bottom: 24px;
 }
 
 .jobs-item::before {
@@ -407,12 +413,12 @@ input[type="radio"].visually-hidden {
     width: 360px;
     height: 208px;
     padding-top: 40px;
-    padding-bottom: 34px;
+    padding-bottom: 35px;
 }
 
 .features-title {
     margin: 0;
-    padding-bottom: 58px;
+    padding-bottom: 52px;
 
     font-size: 16px;
     line-height: 24px;
@@ -441,7 +447,9 @@ input[type="radio"].visually-hidden {
 }
 
 .percent-row sup {
-    top: -9px;
+    top: -14px;
+
+    font-size: 28px;
 }
 
 .description-row {
@@ -519,13 +527,13 @@ input[type="radio"].visually-hidden {
 .footer-contact-address {
     position: absolute;
 
-    top: 26px;
-    left: 140px;
+    top: 53px;
+    left: 201px;
 
     box-sizing: border-box;
 
     margin: 0;
-    padding: 47px 50px;
+    padding: 49px 53px 45px 47px;
 
     width: 320px;
     height: 308px;
@@ -535,7 +543,7 @@ input[type="radio"].visually-hidden {
 
 .footer-contact-address h3 {
     margin: 0;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
 
     font-size: 18px;
     line-height: 30px;
@@ -553,11 +561,11 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contact-address p:first-of-type {
-    margin-bottom: 20px;
+    padding-bottom: 18px;
 }
 
 .footer-contact-address p:last-of-type {
-    margin-bottom: 37px;
+    padding-bottom: 37px;
 }
 
 .modal-button {
@@ -582,7 +590,7 @@ input[type="radio"].visually-hidden {
 
     display: inline-block;
 
-    margin-right: 10px;
+    margin-right: 7px;
 
     width: 80px;
     height: 80px;
@@ -672,7 +680,7 @@ input[type="radio"].visually-hidden {
     display: block;
 
     margin: 0;
-    padding: 10px 0;
+    padding: 8px 0;
 
     font-size: 36px;
     line-height: 36px;
@@ -810,7 +818,7 @@ input[type="radio"].visually-hidden {
     width: 21px;
     height: 21px;
 
-    background-image: url("../img/close-cross.png");
+    background-image: url("../img/close-cross.svg");
     background-repeat: no-repeat;
     background-position: center;
 
