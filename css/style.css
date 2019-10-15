@@ -1164,3 +1164,82 @@ input[type="radio"].visually-hidden {
     border-top: 3px solid #bfbfbf;
     padding-top: 15px;
 }
+
+.template-sort {
+    display: flex;
+    align-items: center;
+}
+
+.template-sort-title {
+    display: inline-block;
+    margin: 0;
+    margin-right: 267px;
+    padding-top: 57px;
+    padding-bottom: 50px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.template-sort-list {
+    margin: 0;
+    padding: 0;
+
+    width: 300px;
+
+    list-style: none;
+}
+
+.template-sort-item {
+    display: inline-block;
+
+    padding-right: 26px;
+
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.template-sort-item:last-child {
+    padding-right: 0;
+}
+
+.template-sort-item a {
+    display: block;
+    padding-top: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.template-sort-up-down {
+    width: 60px;
+    text-align: right;
+}
+
+.template-sort-up-down .sort-down {
+    margin-right: 18px;
+    padding: 3px;
+
+    width: 11px;
+    height: 10px;
+
+    background: url("../img/icon-up-down.svg") center no-repeat;
+    transform: rotate(180deg);
+    border: none;
+}
+
+.template-sort-up-down .sort-up {
+    display: inline-block;
+    padding: 3px;
+
+    width: 11px;
+    height: 10px;
+
+    background: url("../img/icon-up-down.svg") center no-repeat;
+    border: none;
+}
