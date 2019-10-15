@@ -1271,3 +1271,127 @@ input[type="radio"].visually-hidden {
 .sort-up.active:hover {
     opacity: 1;
 }
+
+.templates-card-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 760px;
+
+    list-style: none;
+}
+
+.template-card {
+    position: relative;
+
+    box-sizing: border-box;
+
+    margin-bottom: 33px;
+
+    width: 360px;
+}
+
+.template-card:hover {
+    filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
+
+.template-card:nth-child(2n + 1) {
+    margin-right: 40px;
+}
+
+.template-card-browser {
+    width: 360px;
+
+    background-color: #e9e9e9;
+
+    border-radius: 2px 2px 0 0;
+}
+
+.template-card:hover .template-card-browser {
+    background-color: #4d4d4d;
+}
+
+.template-card:hover .template-card-description {
+    display: block;
+}
+
+.template-card-browser ul {
+    margin: 0;
+    padding: 0;
+    padding: 16px 0;
+
+    list-style: none;
+}
+
+.decorate-circle {
+    display: inline-block;
+
+    margin-left: 9px;
+    width: 14px;
+    height: 14px;
+
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.decorate-circle:first-child {
+    margin-left: 16px;
+}
+
+.template-card .card-item img {
+    box-sizing: border-box;
+
+    width: 360px;
+    height: 576px;
+
+    border: 1px solid #e5e5e5;
+}
+
+.template-card-description {
+    position: absolute;
+
+    top: 385px;
+    left: 0px;
+
+    width: 360px;
+
+    background-color: #eeeeee;
+    display: none;
+}
+
+.template-card-description h3 {
+    margin: 0;
+    padding-top: 29px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.template-card-description p {
+    display: block;
+
+    margin: 0 auto;
+    padding: 29px 0;
+
+    width: 240px;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 18px;
+
+
+
+    color: #000;
+}
+
+.price-button {
+    margin-left: 80px;
+    margin-bottom: 43px;
+
+    padding: 16px 61px;
+}
