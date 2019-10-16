@@ -1,18 +1,20 @@
 /* popup close/open script */
-var modal = document.querySelector(".modal")
+var modal = document.querySelector(".modal");
 var modalOpenBtn = document.querySelector(".modal-button");
 var modalCloseBtn = document.querySelector(".close-modal-button");
 
 // modal popup open
 modalOpenBtn.addEventListener("click", function(evt) {
     evt.preventDefault();
-    modal.classList.add("modal--show")  
+    modal.classList.add("modal--show"); 
 })
 
 // modal popup close
 modalCloseBtn.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modal.classList.remove("modal--show")  
+    evt.preventDefault(); 
+    modal.classList.remove("modal--show");
+      
+    
 })
 
 /* slider switches */
