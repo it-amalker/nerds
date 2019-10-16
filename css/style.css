@@ -968,6 +968,11 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 2px 4px #cccdcd;
 }
 
+.progress-line:hover::before,
+.progress-line:hover::after {
+    cursor: pointer;
+}
+
 .filter-price {
     display: flex;
     justify-content: space-between;
@@ -1404,7 +1409,7 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
-.template-card-description h3 {
+.card-title {
     margin: 0;
     padding-top: 28px;
 
@@ -1417,6 +1422,11 @@ input[type="radio"].visually-hidden {
     color: #000;
 }
 
+.card-title a {
+    text-decoration: none;
+    color: #000;
+}
+
 .template-card-description p {
     display: block;
 
@@ -1424,8 +1434,9 @@ input[type="radio"].visually-hidden {
     padding-top: 15px;
     padding-bottom: 28px;
 
-    width: 230px;
+    max-width: 230px;
     text-align: center;
+    word-wrap: break-word;
 
     font-size: 16px;
     line-height: 18px;
