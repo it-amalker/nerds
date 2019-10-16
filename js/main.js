@@ -1,4 +1,4 @@
-// popup close and open
+/* popup close/open script */
 var modal = document.querySelector(".modal")
 var modalOpenBtn = document.querySelector(".modal-button");
 var modalCloseBtn = document.querySelector(".close-modal-button");
@@ -15,39 +15,23 @@ modalCloseBtn.addEventListener("click", function(evt) {
     modal.classList.remove("modal--show")  
 })
 
-// slider switches
-var allSwitches = document.querySelectorAll(".slider-circle");
-var firstSwitch = document.querySelector(".slider-circle-1");
-var secondSwitch = document.querySelector(".slider-circle-2");
-var thirdSwitch = document.querySelector(".slider-circle-3");
-var allSliders = document.querySelectorAll(".slider");
-var firstSlider = document.querySelector(".slider-1");
-var secondSlider = document.querySelector(".slider-2");
-var thirdSlider = document.querySelector(".slider-3");
+/* slider switches */
+var switches = document.querySelectorAll(".slider-circle");
+var sliders = document.querySelectorAll(".slider");
 
+switches.forEach(function(elem) {
+    elem.addEventListener("click", function() {
+        for (var i = 0; i < switches.length; i++) {
+            switches[i].classList.remove("active");
+            sliders[i].classList.remove("active");
+        }
+        var switchesArray = Array.prototype.slice.call(switches);
+        var sliderIndex = switchesArray.indexOf(elem);
+        elem.classList.add("active");
+        sliders[sliderIndex].classList.add("active");   
+    });
+});
 
-var makeActive = function (switchNumber) {
-    for (var i = 0; i < allSwitches.length; i++) {
-        allSwitches[i].classList.remove("active");
-        allSliders[i].classList.remove("active");
-        console.log(allSwitches[i]);
-        console.log(allSliders[i]);
-    }
-    allSwitches[switchNumber].classList.add("active");
-    allSliders[switchNumber].classList.add("active");
-}
-
-firstSwitch.addEventListener("click", function () {
-    makeActive(0);
-})
-
-secondSwitch.addEventListener("click", function () {
-    makeActive(1);
-})
-
-thirdSwitch.addEventListener("click", function () {
-    makeActive(2);
-})
 
 
 
