@@ -64,6 +64,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
+    position: relative;
+
     min-height: 545px;
 
     background: #eeeeee;
@@ -144,7 +146,6 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 500;
-
 }
 
 .menu-item a:hover {
@@ -159,6 +160,65 @@ input[type="radio"].visually-hidden {
 .menu-item.current-page a {
     padding-bottom: 10px;
     border-bottom: 2px solid #fb565a;
+}
+
+.slider-control {
+    position: absolute;
+    z-index: 1;
+    bottom: 95px;
+    left: 50%;
+
+    margin-left: -44px;
+
+    width: 88px;
+}
+
+.slider-control ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.slider-circle {
+    position: relative;
+
+    display: inline-block;
+
+    margin-right: 12px;
+    vertical-align: middle;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #fff;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.slider-circle.active::before {
+    content: "";
+
+    position: absolute;
+
+    box-sizing: border-box;
+
+    top: 5px;
+    left: 5px;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #fff;
+    border: 2px solid #c2c2c2;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.slider-circle:last-child {
+    margin-right: 0;
 }
 
 .slider-title {
@@ -181,13 +241,16 @@ input[type="radio"].visually-hidden {
     margin-bottom: 41px;
 }
 
-.slider-2 {
+.slider-1,
+.slider-2,
+.slider-3 {
     display: none;
 }
 
-
-.slider-3 {
-    display: none;
+.slider-1.active,
+.slider-2.active,
+.slider-3.active {
+    display: block;
 }
 
 .slider-1,
