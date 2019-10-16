@@ -105,7 +105,7 @@ input[type="radio"].visually-hidden {
 
     list-style: none;
 
-    width: 440px;
+    width: 800px;
 }
 
 .menu-item {
@@ -114,19 +114,14 @@ input[type="radio"].visually-hidden {
 
 .menu-item:last-child {
     margin-right: 0;
+    margin-left: auto;
 }
 
 .header-cart {
     position: relative;
 
-    display: block;
-
-    margin-left: auto;
-    padding-top: 13px;
-
-    width: 113px;
-
     text-align: right;
+    width: 113px;
 }
 
 .header-cart::before {
@@ -134,7 +129,7 @@ input[type="radio"].visually-hidden {
 
     position: absolute;
 
-    top: 20px;
+    top: 6px;
     left: 0px;
 
     width: 15px;
@@ -143,8 +138,7 @@ input[type="radio"].visually-hidden {
     background: url("../img/cart-icon.png") center no-repeat;
 }
 
-.menu-item a,
-.header-cart {
+.menu-item a {
     color: #000000;
     line-height: 30px;
     text-transform: uppercase;
@@ -153,25 +147,17 @@ input[type="radio"].visually-hidden {
 
 }
 
-.menu-item a:hover,
-.header-cart:hover {
+.menu-item a:hover {
     color: #fb565a;
 }
 
-.menu-item a:active,
-.header-cart:active {
+.menu-item a:active {
     color: #000000;
     opacity: 0.3;
 }
 
 .menu-item.current-page a {
     padding-bottom: 10px;
-    border-bottom: 2px solid #fb565a;
-}
-
-.header-cart.current-page {
-    margin-top: 6px;
-    padding-bottom: 5px;
     border-bottom: 2px solid #fb565a;
 }
 
@@ -595,6 +581,10 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
+.social-list li {
+    display: inline-block;
+}
+
 .social-item {
     position: relative;
 
@@ -707,6 +697,21 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
+    display: none;
+
+    position: fixed;
+
+    width: 960px;
+    height: 590px;
+
+    top: 50%;
+    left: 50%;
+
+    margin-top: -295px;
+    margin-left: -480px;
+}
+
+.modal-wrapper {
     position: relative;
 
     box-sizing: border-box;
@@ -721,7 +726,14 @@ input[type="radio"].visually-hidden {
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
+.modal--show {
+    display: block;
+    z-index: 1;
+}
+
 .modal-title {
+
+
     margin: 0;
     padding-bottom: 43px;
 

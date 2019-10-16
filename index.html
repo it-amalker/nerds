@@ -20,9 +20,9 @@
                     <li class="menu-item"><a href="#">Клиенты</a></li>
                     <li class="menu-item"><a href="nerds-catalog.html">Магазин</a></li>
                     <li class="menu-item"><a href="#">Контакты</a></li>
+                    <li class="menu-item header-cart"><a href="#">Корзина</a></li>
                 </ul>
             </div>
-            <a class="header-cart" href="#">Корзина</a>
         </nav>
         <div class="slider-1 container">
             <div class="slider-wrapper">
@@ -151,9 +151,9 @@
         </div>
         <div class="footer-social container">
             <ul class="social-list">
-                <li class="social-item social-vk"><a class="visually-hidden" href="#">Вконтакте</a></li>
-                <li class="social-item social-fb"><a class="visually-hidden" href="#">Фейсбук</a></li>
-                <li class="social-item social-insta"></li><a class="visually-hidden" href="#">Инстаграм</a></li>
+                <li><a class="social-item social-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+                <li><a class="social-item social-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                <li><a class="social-item social-insta" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
             </ul>
             <div class="discount-info">
                 <b>Давайте дружить, это выгодно!</b>
@@ -162,24 +162,27 @@
         </div>
     </footer>
     <section class="modal">
-        <button class="close-modal-button"><span class="visually-hidden">Закрыть</span></button>
-        <h2 class="modal-title">Напишите нам</h2>
-        <form class="modal-form" action="" method="POST">
-            <p class="modal-item">
-                <label for="fullname">Ваше имя:</label>
-                <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
-            </p>
-            <p class="modal-item">
-                <label for="email">Ваш e-mail:</label>
-                <input type="text" name="email" id="email" placeholder="email@example.com">
-            </p>
-            <p class="modal-item">
-                <label for="letter">Текст письма:</label>
-                <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
-            </p>
-        </form>
-        <button class="btn form-button" type="submit">Отправить</button>
+        <div class="modal-wrapper">
+            <button class="close-modal-button"><span class="visually-hidden">Закрыть</span></button>
+            <h2 class="modal-title">Напишите нам</h2>
+            <form class="modal-form" action="" method="POST">
+                <p class="modal-item">
+                    <label for="fullname">Ваше имя:</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+                </p>
+                <p class="modal-item">
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="email@example.com">
+                </p>
+                <p class="modal-item">
+                    <label for="letter">Текст письма:</label>
+                    <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+                </p>
+            </form>
+            <button class="btn form-button" type="submit">Отправить</button>
+        </div>
     </section>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
